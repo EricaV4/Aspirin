@@ -1,0 +1,368 @@
+﻿  Aspirin.cpp
+D:\VD\a\VC\Tools\MSVC\14.43.34808\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+D:\VD\a\VC\Tools\MSVC\14.43.34808\include\execution(12): warning STL4038: The contents of <execution> are available only with C++17 or later.
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(13,21): error C2039: "filesystem": 不是 "std" 的成员
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\mutex(29,1):
+      参见“std”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(13,21): error C2878: “filesystem”: 该名称的命名空间或类不存在
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,15): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,15): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,19): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,8): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,19):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,8): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(17,8): error C3203: "vector": 未指定的 类 模板 不能用作 模板 参数 "_Ty" 的 模板 参数，应为真实类型
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(88,31): error C2429: 语言功能 "结构化绑定" 需要编译器标志 "/std:c++17"
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(89,30): error C2668: “std::basic_string<char,std::char_traits<char>,std::allocator<char>>::find”: 对重载函数的调用不明确
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\xstring(2569,39):
+      可能是“unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char>>::find(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,const unsigned int) noexcept const”
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\xstring(2582,39):
+      或    “unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char>>::find(const _Elem *const ,const unsigned int) noexcept const”
+          with
+          [
+              _Elem=char
+          ]
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\xstring(2589,39):
+      或    “unsigned int std::basic_string<char,std::char_traits<char>,std::allocator<char>>::find(const _Elem,const unsigned int) noexcept const”
+          with
+          [
+              _Elem=char
+          ]
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(89,30):
+      尝试匹配参数列表“(unknown-type)”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(107,17): error C2429: 语言功能 "结构化绑定" 需要编译器标志 "/std:c++17"
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(108,9): error C2541: “delete”: 不能删除不是指针的对象
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,12): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,12): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,16): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,5): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,16):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(153,5): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(216,30): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(216,24): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(216,38): error C2143: 语法错误: 缺少“,”(在“&”的前面)
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,16): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,16): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,20): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,9): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,20):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,9): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(117,34): error C2514: “std::vector”: 无法构建类模板
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,22): error C2665: “std::vector<int,std::allocator<int>>::push_back”: 没有重载函数可以转换所有参数类型
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(921,23):
+      可能是“void std::vector<int,std::allocator<int>>::push_back(_Ty &&)”
+          with
+          [
+              _Ty=int
+          ]
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,22):
+          “void std::vector<int,std::allocator<int>>::push_back(_Ty &&)”: 无法将参数 1 从“std::vector”转换为“_Ty &&”
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,32):
+              原因如下: 无法从“std::vector”转换为“_Ty”
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,32):
+              没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(917,23):
+      或    “void std::vector<int,std::allocator<int>>::push_back(const _Ty &)”
+          with
+          [
+              _Ty=int
+          ]
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,22):
+          “void std::vector<int,std::allocator<int>>::push_back(const _Ty &)”: 无法将参数 1 从“std::vector”转换为“const _Ty &”
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,32):
+              原因如下: 无法从“std::vector”转换为“const _Ty”
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,32):
+              没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(118,22):
+      尝试匹配参数列表“(std::vector)”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(119,37): error C2662: “allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(119,29):
+      原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(119,29):
+      转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1898,39):
+      参见“std::vector<_Ty,_Alloc>::size”的声明
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(119,37):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(119,100): warning C4552: ”<<“: 未使用表达式结果
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,16): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,16): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,20): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,9): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,20):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,9): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,26): error C2133: “results”: 未知的大小
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(154,26): error C2512: “std::vector”: 没有合适的默认构造函数可用
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,16): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,16): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,20): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,9): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,20):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,9): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,26): error C2133: “all_dirs”: 未知的大小
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(156,26): error C2512: “std::vector”: 没有合适的默认构造函数可用
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,32): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,24): error C2530: “entry”: 必须初始化引用
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,24): error C3531: “entry”: 类型包含“auto”的符号必须具有初始值设定项
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,30): error C2143: 语法错误: 缺少“;”(在“:”的前面)
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,36): error C3861: “directory_iterator”: 找不到标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(160,60): error C2143: 语法错误: 缺少“;”(在“)”的前面)
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,30): error C2663: “std::vector<_Ty,_Alloc>::push_back”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(921,23):
+      可能是“void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,30):
+          “void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,21):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,21):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(917,23):
+      或    “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,30):
+          “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,21):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,21):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(162,30):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(171,13): error C2653: “execution”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(171,24): error C2065: “par”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,22): error C2663: “std::vector<_Ty,_Alloc>::begin”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1830,44):
+      可能是“std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::begin(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,22):
+          “std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::begin(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,13):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,13):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1825,38):
+      或    “std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::begin(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,22):
+          “std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::begin(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,13):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,13):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(172,22):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,22): error C2663: “std::vector<_Ty,_Alloc>::end”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1840,44):
+      可能是“std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::end(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,22):
+          “std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::end(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,13):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,13):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1835,38):
+      或    “std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::end(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,22):
+          “std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>> std::vector<_Ty,_Alloc>::end(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,13):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,13):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(173,22):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(193,24): error C7518: 折叠表达式至少需要 "/std:c++17"
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(189,32): error C7510: “filesystem_error”: 类型 从属名称的使用必须以“typename”为前缀
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(189,55): error C2760: 语法错误: 此处出现意外的“)”；应为“;”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(189,55): error C3878: 语法错误:“expression-statement”后出现意外标记“)”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(193,17): error C3878: 语法错误:“try-block”后出现意外标记“catch”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(193,27): error C7512: “)”: 不是 fold 表达式的有效运算符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(193,27): error C2760: 语法错误: 此处出现意外的“)”；应为“;”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(193,27): error C3878: 语法错误:“expression-statement”后出现意外标记“)”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(195,9): error C2059: 语法错误:“)”
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,26): error C2663: “std::vector<_Ty,_Alloc>::rbegin”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1849,52):
+      可能是“std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rbegin(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,26):
+          “std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rbegin(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,18):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,18):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1845,46):
+      或    “std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rbegin(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,26):
+          “std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rbegin(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,18):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,18):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,26):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,44): error C2663: “std::vector<_Ty,_Alloc>::rend”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1857,52):
+      可能是“std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rend(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,44):
+          “std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rend(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,36):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,36):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1853,46):
+      或    “std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rend(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,44):
+          “std::reverse_iterator<std::_Vector_iterator<std::_Vector_val<conditional<std::_Is_simple_alloc_v<allocator_traits<_Alloc>::rebind_alloc<_Ty>>,std::_Simple_types<_Value_type>,std::_Vec_iter_types<_Ty,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::difference_type,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::pointer,allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::const_pointer>>::type>>> std::vector<_Ty,_Alloc>::rend(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,36):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,36):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(199,44):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,20): error C2065: “fs”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,20): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,24): error C2065: “path”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,13): error C2923: "std::vector": "path" 不是参数 "_Ty" 的有效 模板 类型参数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,24):
+      参见“path”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,13): error C2976: “std::vector'”: 模板 参数太少
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,30): error C2133: “filtered”: 未知的大小
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(205,30): error C2512: “std::vector”: 没有合适的默认构造函数可用
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(429,7):
+      参见“std::vector”的声明
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34): error C2663: “std::vector<_Ty,_Alloc>::_Unchecked_begin”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1881,40):
+      可能是“const _Ty *std::vector<_Ty,_Alloc>::_Unchecked_begin(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+          “const _Ty *std::vector<_Ty,_Alloc>::_Unchecked_begin(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1877,34):
+      或    “_Ty *std::vector<_Ty,_Alloc>::_Unchecked_begin(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+          “_Ty *std::vector<_Ty,_Alloc>::_Unchecked_begin(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34): error C2663: “std::vector<_Ty,_Alloc>::_Unchecked_end”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1889,40):
+      可能是“const _Ty *std::vector<_Ty,_Alloc>::_Unchecked_end(void) noexcept const”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+          “const _Ty *std::vector<_Ty,_Alloc>::_Unchecked_end(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(1885,34):
+      或    “_Ty *std::vector<_Ty,_Alloc>::_Unchecked_end(void) noexcept”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+          “_Ty *std::vector<_Ty,_Alloc>::_Unchecked_end(void) noexcept”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(206,34):
+      尝试匹配参数列表“()”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,30): error C2663: “std::vector<_Ty,_Alloc>::push_back”: 没有重载函数具有对 “this” 指针的有效转换
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(921,23):
+      可能是“void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,30):
+          “void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,21):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,21):
+              转换要求第二个用户定义的转换运算符或构造函数
+      D:\VD\a\VC\Tools\MSVC\14.43.34808\include\vector(917,23):
+      或    “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”
+          C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,30):
+          “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,21):
+              原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+              C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,21):
+              转换要求第二个用户定义的转换运算符或构造函数
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(208,30):
+      尝试匹配参数列表“(const _Ty)”时
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(211,13): error C2440: “return”: 无法从“std::vector”转换为“std::vector”
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(211,13):
+      由于复制构造函数不明确或没有可用的复制构造函数，因此无法复制构造 class“std::vector”
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(213,9): error C2440: “return”: 无法从“std::vector”转换为“std::vector”
+      C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(213,9):
+      由于复制构造函数不明确或没有可用的复制构造函数，因此无法复制构造 class“std::vector”
+  
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(217,13): error C2065: “params”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,38): error C2653: “fs”: 不是类或命名空间名称
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,30): error C2530: “entry”: 必须初始化引用
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,30): error C3531: “entry”: 类型包含“auto”的符号必须具有初始值设定项
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,36): error C2143: 语法错误: 缺少“;”(在“:”的前面)
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,42): error C3861: “directory_iterator”: 找不到标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(221,66): error C2143: 语法错误: 缺少“;”(在“)”的前面)
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(224,34): error C2065: “params”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(226,56): error C2065: “params”: 未声明的标识符
+C:\Users\Administrator\source\repos\Aspirin\Aspirin\Aspirin.cpp(226,56): error C1003: 错误计数超过 100；正在停止编译
