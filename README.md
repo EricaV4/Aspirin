@@ -1,3 +1,5 @@
+[![Download Now](https://img.shields.io/badge/Download-Windows%20x64-green?style=for-the-badge&logo=windows)]([https://example.com](https://github.com/EricaV4/Aspirin/releases/tag/V))
+```
 
 ## 🌍 English Version
 
@@ -82,17 +84,7 @@ fil_汉化包.txt i_Move 0x1
    verify 0x1  # 验证文件完整性
    ```
 
-![操作流程](https://via.placeholder.com/800x400.png/FF0000/FFFFFF?text=拖放式工作流)
 
----
-
-## ⚠️ 安全提示 | Safety Notice
-✅ Always backup before operation | 操作前务必备份  
-✅ Verify file sources | 验证文件来源  
-✅ Use antivirus software | 配合杀毒软件使用  
-
-[![Download Now](https://img.shields.io/badge/Download-Windows%20x64-green?style=for-the-badge&logo=windows)](https://example.com)
-```
 
 **使用说明**：
 1. 复制整个代码块到您的`README.md`文件
