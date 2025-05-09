@@ -1,15 +1,3 @@
-```markdown
-<div align="center">
-  <a href="#english-version"><img src="https://img.shields.io/badge/English-🇺🇸-blue?style=for-the-badge" /></a>
-  <a href="#中文版本"><img src="https://img.shields.io/badge/中文-🇨🇳-red?style=for-the-badge" /></a>
-</div>
-
----
-
-# Aspirin Localization Helper 💊
-### 游戏汉化智能辅助工具 | Smart Game Localization Assistant
-
----
 
 ## 🌍 English Version
 
@@ -51,7 +39,6 @@ fil_汉化包.txt i_Move 0x1
    verify 0x1  # Check file integrity
    ```
 
-![Workflow](https://via.placeholder.com/800x400.png/0078D7/FFFFFF?text=Drag+and+Drop+Workflow)
 
 ---
 
