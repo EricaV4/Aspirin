@@ -1,4 +1,4 @@
-[![Download](https://img.shields.io/badge/Windows-x64_Installer-0078D6?style=for-the-badge&logo=windows&logoColor=white)]([https://github.com/EricaV4/Aspirin/releases/latest/download/Aspirin_Setup.exe]([![Windows Download](https://img.shields.io/badge/Windows-x64_Installer-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/EricaV4/Aspirin/releases/latest/))
+[![Windows Download](https://img.shields.io/badge/Windows-x64_Installer-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/EricaV4/Aspirin/releases/latest/)
 ## 🌍 English Version
 
 ### 🎯 Project Purpose
