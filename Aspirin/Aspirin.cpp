@@ -14,10 +14,10 @@
 #else
 #endif
 
-// 全局变量声明
-std::string computerName = "FoxMomo";  // 初始化默认值
 
-// 修改获取函数
+std::string computerName = "FoxMomo";  
+
+
 void initComputerName() {
 #ifdef _WIN32
     char buffer[MAX_COMPUTERNAME_LENGTH + 1] = { 0 };
@@ -38,10 +38,10 @@ void initComputerName() {
 namespace fs = std::filesystem;
 using namespace std;
 
-// 全局变量
+
 vector<vector<fs::path>> search_cache;
 
-// 前置声明
+
 struct CommandHandler;
 void register_commands(map<string, CommandHandler*>& handlers);
 vector<string> split(const string& s, char delimiter);
@@ -72,7 +72,7 @@ int main() {
 
     initComputerName();  // 初始化全局变量
 
-    SetConsoleTitleA("Aspirin_2.2");
+    SetConsoleTitleA("Aspirin_2.3");
     print_main();
 
     map<string, CommandHandler*> command_handlers;
@@ -137,9 +137,9 @@ int main() {
 void print_momo() {
     std::cout << " 糟糕! 又被你发现惹~ \n"
         << " by Akarin \n"
-        << " Hello " << computerName << "\n";  // 直接使用全局变量
+        << " Hello " << computerName << "\n";  
 }
-// 增强型文件夹搜索处理器
+
 struct FolderSearchHandler : CommandHandler {
     void execute(const vector<string>& parts) override {
         FolderSearchParams params = parse_command(parts[0]);
@@ -396,6 +396,46 @@ private:
     }
 };
 
+struct CrackHandler : CommandHandler {
+    void execute(const vector<string>& parts) override {
+        if (parts[0] == "crack_all") {
+            if (search_cache.empty()) {
+                cout << "当前没有缓存数据" << endl;
+                return;
+            }
+
+            cout << "╔════════════════ 所有缓存路径 ════════════════╗" << endl;
+            for (size_t i = 0; i < search_cache.size(); ++i) {
+                print_cache(i, search_cache[i]);
+            }
+            cout << "╚═════════════════════════════════════════════╝" << endl;
+        }
+        else if (parts[0].find("crack_0x") == 0) {
+            int index = stoi(parts[0].substr(8)) - 1;  // 修正子字符串截取位置
+            if (index < 0 || index >= search_cache.size()) {
+                throw invalid_argument("无效的缓存编号: 0x" + to_string(index + 1));
+            }
+
+            cout << "╔══════════ 缓存 0x" << (index + 1) << " 路径详情 ══════════╗" << endl;
+            print_cache(index, search_cache[index]);
+            cout << "╚═════════════════════════════════════════════╝" << endl;
+        }
+        else {
+            throw invalid_argument("未知的查看指令: " + parts[0]);
+        }
+    }
+
+private:
+    void print_cache(size_t index, const vector<fs::path>& cache) {
+        cout << "│ 缓存 0x" << (index + 1)
+            << " (" << cache.size() << " 条路径)" << endl;
+        cout << "├─────────────────────────────────────────────" << endl;
+
+        for (const auto& path : cache) {
+            cout << "│ " << path.string() << endl;
+        }
+    }
+};
 // 缓存清除处理器
 struct ClearHandler : CommandHandler {
     void execute(const vector<string>& parts) override {
@@ -414,6 +454,7 @@ struct ClearHandler : CommandHandler {
                 throw invalid_argument("缓存已空");
             }
         }
+
         else if (clear_cmd.find("0x") == 0) {
             int index = stoi(clear_cmd.substr(2)) - 1;
             if (index >= 0 && index < search_cache.size()) {
@@ -427,6 +468,7 @@ struct ClearHandler : CommandHandler {
         else {
             throw invalid_argument("未知的清除指令: " + clear_cmd);
         }
+
     }
 };
 
@@ -437,6 +479,7 @@ void register_commands(map<string, CommandHandler*>& handlers) {
     handlers["the_"] = new FileOperationHandler(FileOperationHandler::THE);
     handlers["fil_"] = new FileOperationHandler(FileOperationHandler::FILE);
     handlers["clear_"] = new ClearHandler();
+    handlers["crack_"] = new CrackHandler();  // 新增此行
 }
 
 vector<string> split(const string& s, char delimiter) {
@@ -488,6 +531,7 @@ void print_help() {
     cout << "╔══════════════════ Aspirin 基础帮助 ═════════════════╗\n"
         << "║ 命令格式        说明                                ║\n"
         << "╠════════════════════╦════════════════════════════════╣\n"
+        << "║ crack_0xN/all      ║ 查看缓存路径 (例:crack_0x1)    ║\n"  
         << "║ i_<名称>_<盘>[模式]║ 智能搜索 (例:i_Data_D_p)       ║\n"
         << "║ all/the/fil ...    ║ 操作目录/文件 (支持0x缓存)     ║\n"
         << "║ clear_<类型>       ║ 缓存管理 (all/step/0xN)        ║\n"
@@ -512,6 +556,9 @@ void print_helpPlus() {
         << "║ _ap/_pa           ║ 组合模式                        ║\n"
         << "╠═══════════════════╬═════════════════════════════════╣\n"
         << "║ 条件过滤          ║ 示例说明                        ║\n"
+        << "╠═══════════════════╬═════════════════════════════════╣\n"
+        << "║ crack_0xN         ║ 查看指定缓存内容 (N从1开始)     ║\n"
+        << "║ crack_all         ║ 查看全部缓存内容                ║\n"
         << "╠═══════════════════╬═════════════════════════════════╣\n"
         << "║ +Documents        ║ 需含Documents子目录             ║\n"
         << "║ +=config.ini      ║ 需含指定文件                    ║\n"
