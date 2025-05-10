@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <filesystem>
@@ -9,6 +9,31 @@
 #include <regex>
 #include <execution>
 #include <mutex>
+#ifdef _WIN32
+#include <lmcons.h>
+#else
+#endif
+
+// 全局变量声明
+std::string computerName = "FoxMomo";  // 初始化默认值
+
+// 修改获取函数
+void initComputerName() {
+#ifdef _WIN32
+    char buffer[MAX_COMPUTERNAME_LENGTH + 1] = { 0 };
+    DWORD size = sizeof(buffer);
+    if (GetComputerNameA(buffer, &size)) {
+        computerName = buffer;
+    }
+#else
+    char buffer[HOST_NAME_MAX] = { 0 };
+    if (gethostname(buffer, sizeof(buffer)) == 0) {
+        computerName = buffer;
+    }
+#endif
+}
+
+
 
 namespace fs = std::filesystem;
 using namespace std;
@@ -23,6 +48,8 @@ vector<string> split(const string& s, char delimiter);
 void reset_console();
 void print_helpPlus();
 void print_help();
+void print_momo();
+void print_main();
 
 // 命令处理器基类
 struct CommandHandler {
@@ -42,17 +69,11 @@ struct FolderSearchParams {
 
 
 int main() {
-    SetConsoleTitleA("Aspirin_2.0");
-#include <iostream>
 
-        std::cout << "     _                    _          _         " << std::endl;
-        std::cout << "    / \\     ___   _ __   (_)  _ __  (_)  _ __  " << std::endl;
-        std::cout << "   / _ \\   / __| | '_ \\  | | | '__| | | | '_ \\ " << std::endl;
-        std::cout << "  / ___ \\  \\__ \\ | |_) | | | | |    | | | | | |" << std::endl;
-        std::cout << " /_/   \\_\\ |___/ | .__/  |_| |_|    |_| |_| |_|" << std::endl;
-        std::cout << "                 |_|                           \n" << std::endl;
-    cout << " 欢迎使用\"Aspirin\"IQBoost工具!" << endl;
-    cout << " 输入help或helpPlus查看帮助 - 或者输入" << endl;
+    initComputerName();  // 初始化全局变量
+
+    SetConsoleTitleA("Aspirin_2.2");
+    print_main();
 
     map<string, CommandHandler*> command_handlers;
     register_commands(command_handlers);
@@ -62,17 +83,21 @@ int main() {
         cout << "\n> ";
         getline(cin, input);
 
-        if (input == "exit") break;
-        if (input == "reset") {
+        if (input == "exit" || input == "Exit") break;
+        if (input == "reset" || input == "Reset") {
             reset_console();
             continue;
         }
-        if (input == "help") {
+        if (input == "help" || input == "Help" || input == "HELP") {
             print_help();
             continue;
         }
-        if (input == "helpPlus") {
+        if (input == "helpPlus" || input == "HelpPlus") {
             print_helpPlus();
+            continue;
+        }
+        if (input == "momo" || input == "Momo" || input == "moMo") {
+            print_momo();
             continue;
         }
 
@@ -109,7 +134,11 @@ int main() {
     }
     return 0;
 }
-
+void print_momo() {
+    std::cout << " 糟糕! 又被你发现惹~ \n"
+        << " by Akarin \n"
+        << " Hello " << computerName << "\n";  // 直接使用全局变量
+}
 // 增强型文件夹搜索处理器
 struct FolderSearchHandler : CommandHandler {
     void execute(const vector<string>& parts) override {
@@ -253,7 +282,7 @@ struct FileOperationHandler : CommandHandler {
     explicit FileOperationHandler(OpType t) : type(t) {}
 
     void execute(const vector<string>& parts) override {
-        if (parts.size() < 3 || (parts[1] != "move" && parts[1] != "i_Move")) {
+        if (parts.size() < 3 || (parts[1] != "move" && parts[1] != "i_move")) {
             throw invalid_argument("无效的命令格式");
         }
 
@@ -288,7 +317,7 @@ struct FileOperationHandler : CommandHandler {
             dest_path = fs::path(dest_str);
         }
 
-        bool overwrite = (parts[1] == "i_Move");
+        bool overwrite = (parts[1] == "i_move");
 
         for (const auto& source : source_paths) {
             switch (type) {
@@ -325,19 +354,44 @@ private:
     void move_item(const fs::path& src, const fs::path& dest, bool overwrite) {
         fs::path target = dest / src.filename();
 
-        if (overwrite && fs::exists(target)) {
-            if (fs::equivalent(src, target)) {
-                throw invalid_argument("不能覆盖自身");
+        // 检查目标是否存在
+        if (fs::exists(target)) {
+            if (overwrite) {
+                if (fs::equivalent(src, target)) {
+                    cerr << "错误: 不能覆盖自身 " << src << endl;
+                    return;
+                }
+                try {
+                    fs::remove_all(target);
+                }
+                catch (const fs::filesystem_error& e) {
+                    cerr << "无法删除目标: " << e.what() << endl;
+                    return;
+                }
             }
-            fs::remove_all(target);
+            else {
+                cerr << "警告: 目标已存在，跳过 " << target << endl;
+                return;
+            }
         }
 
         try {
             fs::rename(src, target);
         }
-        catch (const fs::filesystem_error&) {
-            fs::copy(src, target, fs::copy_options::overwrite_existing);
-            fs::remove_all(src);
+        catch (const fs::filesystem_error& e) {
+            // 跨设备移动，使用复制+删除
+            try {
+                if (fs::is_directory(src)) {
+                    fs::copy(src, target, fs::copy_options::recursive | fs::copy_options::overwrite_existing);
+                }
+                else {
+                    fs::copy(src, target, fs::copy_options::overwrite_existing);
+                }
+                fs::remove_all(src);
+            }
+            catch (const fs::filesystem_error& copy_err) {
+                cerr << "移动失败: " << copy_err.what() << endl;
+            }
         }
     }
 };
@@ -413,11 +467,23 @@ void reset_console() {
 
     std::cout.flush();
     SetConsoleTextAttribute(hStdOut, csbi.wAttributes);
+    print_main();
 #else
     std::cout << "\033[2J\033[1;1H";
     std::cout << "\033[0m";
 #endif
 }
+void print_main() {
+    std::cout << "     _                    _          _         " << std::endl;
+    std::cout << "    / \\     ___   _ __   (_)  _ __  (_)  _ __  " << std::endl;
+    std::cout << "   / _ \\   / __| | '_ \\  | | | '__| | | | '_ \\ " << std::endl;
+    std::cout << "  / ___ \\  \\__ \\ | |_) | | | | |    | | | | | |" << std::endl;
+    std::cout << " /_/   \\_\\ |___/ | .__/  |_| |_|    |_| |_| |_|" << std::endl;
+    std::cout << "                 |_|                           \n" << std::endl;
+    cout << " 欢迎使用\"Aspirin\"IQBoost工具!" << endl;
+    cout << " 输入help或helpPlus查看帮助 - 或者输入" << endl;
+}
+
 void print_help() {
     cout << "╔══════════════════ Aspirin 基础帮助 ═════════════════╗\n"
         << "║ 命令格式        说明                                ║\n"
@@ -425,11 +491,12 @@ void print_help() {
         << "║ i_<名称>_<盘>[模式]║ 智能搜索 (例:i_Data_D_p)       ║\n"
         << "║ all/the/fil ...    ║ 操作目录/文件 (支持0x缓存)     ║\n"
         << "║ clear_<类型>       ║ 缓存管理 (all/step/0xN)        ║\n"
+        << "║ move               ║ 移动文件(i_move为移动并覆盖)   ║\n"
         << "║ reset              ║ 重置控制台                     ║\n"
-        << "║ help[Plus|Pro]     ║ 获取不同级别帮助               ║\n"
+        << "║ help[Plus]         ║ 获取不同级别帮助               ║\n"
         << "╚════════════════════╩════════════════════════════════╝\n"
         << "常用示例：\n"
-        << "  i_Project_C a      → 深度搜索C盘Project文件夹\n"
+        << "  i_Project_C        → 深度搜索C盘Project文件夹\n"
         << "  fil_0x2 move 0x3   → 移动路径缓存2文件到路径缓存3的文件夹\n"
         << "  clear_step         → 删除最近的路径缓存\n";
 }
